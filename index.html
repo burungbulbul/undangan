@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan & Khitanan - Lilis & Dwi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#F8F6F0;color:#122044}
+.navy{background:#0F2340;color:#fff}
+.gold{color:#C6A45A}
+.cream{background:#FFFBF5}
+.wrap{max-width:480px;margin:0 auto;background:#fff;box-shadow:0 0 30px rgba(0,0,0,.15);overflow:hidden}
+section{padding:44px 28px;text-align:center;position:relative}
+.orn{font-size:28px;letter-spacing:8px;color:#C6A45A}
+h1{font-family:'Playfair Display',serif;font-size:32px;line-height:1.15}
+h2{font-family:'Playfair Display',serif;font-size:26px;margin:8px 0}
+.script{font-family:'Great Vibes',cursive;font-size:42px;color:#C6A45A;line-height:1.2}
+.nama-lintang{font-family:'Great Vibes',cursive;font-size:48px;color:#C6A45A;line-height:1.15;margin:6px 0 4px}
+.btn{display:inline-block;background:#C6A45A;color:#fff;padding:13px 26px;border-radius:30px;text-decoration:none;font-weight:600;margin-top:16px;border:0;cursor:pointer}
+.btn-outline{background:transparent;border:1.5px solid #C6A45A;color:#C6A45A}
+.card{background:#FFFBF5;border:1px solid #E8D9B0;border-radius:20px;padding:22px;margin:14px 0}
+.arch{width:260px;height:340px;border:3px solid #C6A45A;border-radius:140px 140px 18px 18px;overflow:hidden;margin:18px auto;background:#EFE9DC}
+.arch{background:#0F2340}
+.arch img{width:100%;height:100%;object-fit:contain;object-position:center}.circle{width:140px;height:140px;border-radius:50%;border:3px solid #C6A45A;overflow:hidden;margin:12px auto;background:#EFE9DC}
+.circle img{width:100%;height:100%;object-fit:cover}
+.count{display:flex;gap:10px;justify-content:center;margin:18px 0}
+.count div{background:#fff;color:#122044;border-radius:14px;padding:12px 0;width:72px;border:1px solid #E8D9B0}
+.count b{font-size:22px;display:block}
+.count span{font-size:11px;letter-spacing:1px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:12px;margin:7px 0;font-family:'Poppins',sans-serif;font-size:14px}
+.divider{width:80px;height:2px;background:#C6A45A;margin:16px auto}
+.small{font-size:13px;line-height:1.7;color:#555}
+.white-small{color:#D9DEE8;font-size:13px;line-height:1.7}
+.music-btn{position:fixed;bottom:20px;right:20px;background:#C6A45A;color:#fff;border:0;width:50px;height:50px;border-radius:50%;font-size:20px;cursor:pointer;z-index:99;box-shadow:0 5px 15px rgba(0,0,0,.3)}
+.music-btn.playing{animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tamu-box{font-size:13px;margin:0 0 18px;color:#fff;background:rgba(255,255,255,.12);padding:12px;border-radius:14px;border:1px solid rgba(198,164,90,.5)}
+.tamu-box b{display:block;font-size:15px;margin-top:4px;letter-spacing:.3px}
+/* Foto Lintang - Lingkaran + Ornamen Navy-Gold */
+.lintang-wrap{position:relative;width:210px;height:210px;margin:18px auto 6px}
+.lintang-wrap::before{content:"";position:absolute;inset:-12px;border:1.5px dashed #C6A45A;border-radius:50%}
+.lintang-wrap::after{content:"✦";position:absolute;top:-22px;left:50%;transform:translateX(-50%);background:#FFFBF5;color:#C6A45A;font-size:18px;padding:0 8px}
+.lintang-frame{width:100%;height:100%;border-radius:50%;overflow:hidden;border:4px solid #C6A45A;box-shadow:0 0 0 5px #FFFBF5,0 0 0 6.5px #C6A45A,0 10px 28px rgba(15,35,64,.25);background:#EFE9DC}
+.lintang-frame img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<!-- COVER - EDIT: Kepada Yth. PINDAH KE ATAS -->
+<section class="navy" style="padding:56px 28px 48px">
+<div class="orn">✦ ✦ ✦</div>
+
+<!-- KEPADA YTH - SUDAH DI ATAS, SEBELUM BISMILLAH -->
+<div class="tamu-box" id="nama-tamu">
+Kepada Yth.<br>Bapak / Ibu / Saudara/i
+<b id="nama-tamu-text">Tamu Undangan</b>
+</div>
+
+<p style="letter-spacing:3px;font-size:11px;margin:14px 0">BISMILLAHIRRAHMANIRRAHIM</p>
+<p class="white-small">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami:</p>
+<div class="arch"><img src="foto-mama-bapak.jpeg" alt="Lilis & Dwi"></div>
+<p style="font-size:12px;letter-spacing:2px">THE WEDDING OF</p>
+<p class="script" style="font-size:48px">Lilis & Dwi</p>
+<p><b>Lilis Kurniasih, S.Pd</b><br>&<br><b>Drs. Dwi Sulistyono, M.Pd</b></p>
+<div class="divider"></div>
+<p><b>Minggu, 22 November 2026</b><br><span class="white-small">Dusun Cipaku, Desa Sukamaju, Baregbeg, Ciamis</span></p>
+<a class="btn" href="#acara" onclick="playMusik()">Buka Undangan ↓</a>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="cream">
+<div style="font-size:22px">🌿 ✦ 🌿</div>
+<h2>Menuju Hari Bahagia</h2>
+<div class="count">
+<div><b id="d">00</b><span>HARI</span></div>
+<div><b id="h">00</b><span>JAM</span></div>
+<div><b id="m">00</b><span>MENIT</span></div>
+<div><b id="s">00</b><span>DETIK</span></div>
+</div>
+<p class="small">Kehadiran dan doa restu Bapak/Ibu/Saudara/i akan melengkapi kebahagiaan kami.</p>
+</section>
+
+<!-- MEMPELAI -->
+<section id="acara">
+<p class="gold" style="letter-spacing:3px;font-size:11px">MEMPELAI</p>
+<h2>Lilis & Dwi</h2>
+<div class="card">
+<div class="circle"><img src="foto-mama.jpeg" alt="Lilis"></div>
+<h3>Lilis Kurniasih, S.Pd</h3>
+<p class="small">Mempelai Wanita</p>
+</div>
+<p style="font-size:28px;color:#C6A45A">&</p>
+<div class="card">
+<div class="circle"><img src="foto-bapak.jpeg" alt="Dwi"></div>
+<h3>Drs. Dwi Sulistyono, M.Pd</h3>
+<p class="small">Mempelai Pria</p>
+</div>
+</section>
+
+<!-- ACARA -->
+<section class="navy">
+<p class="gold" style="letter-spacing:3px;font-size:11px">WAKTU & TEMPAT</p>
+<h2>Rangkaian Acara</h2>
+<div style="background:#fff;color:#122044;border-radius:20px;padding:22px;margin:14px 0">
+<p class="gold">✦ AKAD NIKAH ✦</p>
+<h3 style="margin:8px 0">Minggu, 22 November 2026</h3>
+<p><b>09.00 WIB</b><br>Rumah Mempelai Wanita<br><span class="small">Dusun Cipaku RT 02 RW 07, Desa Sukamaju,<br>Kec. Baregbeg, Kab. Ciamis</span></p>
+</div>
+<div style="background:#fff;color:#122044;border-radius:20px;padding:22px">
+<p class="gold">✦ RESEPSI PERNIKAHAN ✦</p>
+<h3 style="margin:8px 0">Minggu, 22 November 2026</h3>
+<p><b>11.00 WIB s.d. Selesai</b><br>Rumah Mempelai Wanita</p>
+</div>
+<a class="btn" href="https://maps.app.goo.gl/QeiPBrJhpsM6Eias6" target="_blank">📍 Lihat Google Maps</a>
+</section>
+
+<!-- KHITANAN - EDIT: DITAMBAH FOTO LINTANG + FONT NAMA -->
+<section class="cream">
+<div style="font-size:22px">🤲</div>
+<p class="small">Selain itu, kami juga mengundang Bapak/Ibu/Saudara/i untuk turut mendoakan Ananda <b>Lintang Raka Pradipta</b> dalam acara Tasyakuran Khitanan yang dilaksanakan pada hari yang sama.</p>
+<h2>Tasyakuran Khitanan</h2>
+
+<!-- FOTO LINTANG - LINGKARAN + ORNAMEN - INI LETAKNYA -->
+<div class="lintang-wrap">
+  <div class="lintang-frame">
+    <img src="foto-lintang.jpg" alt="Lintang Raka Pradipta" style="object-position:center 25%">
+  </div>
+</div>
+<p style="font-size:18px;letter-spacing:4px;color:#C6A45A;margin-top:10px">✦ &nbsp; ✦ &nbsp; ✦</p>
+
+<!-- NAMA LINTANG - FONT GREAT VIBES -->
+<p class="nama-lintang">Lintang Raka Pradipta</p>
+
+<div class="card"><b>Minggu, 22 November 2026</b><br><span class="small">Bersamaan dengan acara Pernikahan • Rumah Mempelai Wanita</span></div>
+</section>
+
+<!-- RSVP -->
+<section class="cream">
+<h2>RSVP & Ucapan Doa</h2>
+<p class="small">Mohon konfirmasi kehadiran Anda</p>
+<input id="nama" placeholder="Nama Lengkap">
+<select id="hadir"><option>Hadir</option><option>Berhalangan</option></select>
+<input id="jumlah" placeholder="Jumlah yang hadir, contoh: 2">
+<textarea id="ucapan" rows="3" placeholder="Tulis doa terbaik untuk Lilis & Dwi dan Ananda Lintang..."></textarea>
+<button class="btn" style="width:100%" onclick="kirim()">Kirim Konfirmasi & Ucapan →</button>
+<p id="hasil" style="font-size:13px;margin-top:10px;color:#0F6B3A"></p>
+<div id="list" style="text-align:left;margin-top:16px"></div>
+</section>
+
+<!-- PENUTUP -->
+<section class="navy">
+<p class="white-small">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Saudara/i berkenan hadir, berbagi kebahagiaan, serta mendoakan kedua mempelai dan cucu kami tercinta.<br><br>Atas kehadiran dan doa restunya, kami ucapkan terima kasih.<br><br>Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
+<div class="divider"></div>
+<p>Hormat kami,</p>
+<p class="script" style="font-size:38px">Keluarga Besar Lilis & Dwi</p>
+<p style="font-size:11px;color:#D9DEE8;margin-top:18px">Minggu, 22 November 2026 • Ciamis, Jawa Barat</p>
+</section>
+
+</div>
+
+<!-- MUSIK - EDIT: AUTOPLAY -->
+<audio id="musik" loop preload="auto" autoplay playsinline>
+<source src="lagu.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" id="musicBtn" onclick="toggleMusik()">♪</button>
+
+<script>
+// Countdown ke 22 Nov 2026 09.00 WIB
+const target = new Date('2026-11-22T09:00:00+07:00').getTime();
+setInterval(()=>{
+let diff = target - Date.now(); if(diff<0) diff=0;
+let d = Math.floor(diff/86400000), h = Math.floor(diff%86400000/3600000), m = Math.floor(diff%3600000/60000), s = Math.floor(diff%60000/1000);
+document.getElementById('d').innerText=String(d).padStart(2,'0');
+document.getElementById('h').innerText=String(h).padStart(2,'0');
+document.getElementById('m').innerText=String(m).padStart(2,'0');
+document.getElementById('s').innerText=String(s).padStart(2,'0');
+},1000);
+
+// Nama Tamu Otomatis - contoh link: undangan.html?to=Bapak+Agus
+const params = new URLSearchParams(window.location.search);
+const tamu = params.get('to');
+if(tamu){
+document.getElementById('nama-tamu-text').innerText = tamu;
+document.getElementById('nama').value = tamu;
+}
+
+// RSVP
+function kirim(){
+let n = document.getElementById('nama').value || 'Tamu';
+let u = document.getElementById('ucapan').value || 'Selamat!';
+let h = document.getElementById('hadir').value;
+document.getElementById('hasil').innerText='Terima kasih '+n+', konfirmasi Anda ('+h+') sudah tercatat.';
+let el=document.createElement('div');
+el.style.cssText='background:#fff;padding:12px;border-radius:12px;margin:8px 0';
+el.innerHTML='<b>'+n+'</b> • '+h+'<br><span style="font-size:13px">'+u+'</span>';
+document.getElementById('list').prepend(el);
+}
+
+// Musik - Autoplay + Fallback
+let isPlaying=false;
+const audio=document.getElementById('musik');
+const musicBtn=document.getElementById('musicBtn');
+function playMusik(){
+  audio.play().then(()=>{isPlaying=true;musicBtn.classList.add('playing');}).catch(()=>{});
+}
+function toggleMusik(){
+  if(isPlaying){audio.pause();isPlaying=false;musicBtn.classList.remove('playing');}
+  else {playMusik();}
+}
+window.addEventListener('load',()=>{ playMusik(); });
+['touchstart','click','scroll'].forEach(ev=>{
+  document.addEventListener(ev,()=>{ if(!isPlaying) playMusik(); },{once:true});
+});
+</script>
+</body>
+</html>
